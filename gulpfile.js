@@ -7,7 +7,10 @@ function buildStyles() {
     .pipe(gulp.dest('style'));
 };
 
-exports.buildStyles = buildStyles;
-exports.watch = function () {
-  gulp.watch('scss/style.scss', ['sass']);
+
+ function watch() {
+  gulp.watch('scss/style.scss', gulp.dest ('sass'));
 };
+
+exports.buildStyles = buildStyles;
+exports.watch = watch;
