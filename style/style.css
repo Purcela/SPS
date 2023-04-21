@@ -60,16 +60,23 @@ a {
   font-style: italic;
   font-display: swap;
 }
+@font-face {
+  font-family: "Playfair Display regular";
+  src: url("../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.eot");
+  src: url("../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.woff2") format("woff2"), url("../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.woff") format("woff"), url("../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.ttf") format("truetype"), url("../fonts/PlayfairDisplay-Regular/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 5px;
 }
 
-body div header, body div {
+body .body-div, body header {
   max-width: 1366px;
   width: 100%;
 }
@@ -80,17 +87,71 @@ body {
   background-size: auto;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  position: relative;
 }
-body div {
+body header {
   max-width: 60%;
-  height: 1500px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
   position: absolute;
-  z-index: 1;
-  background-color: aqua;
+  z-index: 9;
+  background-color: #a3c56f;
 }
-body div header {
-  height: 200px;
+body header .header-logo img {
+  max-width: 45px;
+  width: 100%;
+  max-height: 60px;
+  height: 100%;
+}
+body header ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+body header ul li .menu-click {
+  font-family: "Muli regular";
+}
+body .body-div {
+  max-width: 60%;
+  height: 100%;
+  padding: 100px 10px 40px 10px;
   position: absolute;
-  z-index: 2;
-  background-color: blue;
+  z-index: 3;
+  background-color: grey;
+}
+
+body .team {
+  background-image: url(../../img/stadium1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body .team .position {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body .team .position img {
+  width: 80px;
+  height: 95px;
+}
+body .team .position .img1,
+body .team .position .img9 {
+  margin-right: 10%;
+}
+body .team .position .img20 {
+  width: 100px;
+}
+body .team .position .img33 {
+  width: 90px;
+}
+body .team .gk,
+body .team .atack {
+  justify-content: center;
 }

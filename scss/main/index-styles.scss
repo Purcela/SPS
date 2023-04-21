@@ -1,24 +1,49 @@
 body {
     @extend %body;
-    background-image: url(../../img/gress.jpg) ;
+    background-image: url(../../img/gress.jpg);
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    
-    div {
+    background-attachment: fixed;  
+    position: relative;   
+    header {
         @extend %width;
         max-width: 60%;
-        height: 1500px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5%;
         position: absolute;
-        z-index: 1;
-        background-color: aqua;
-        header {
-            @extend %width;
-            height: 200px;
-            position: absolute;
-            z-index: 2;
-            background-color: blue;
+        z-index: 9;
+        background-color: #a3c56f;
+        .header-logo {            
+            img {
+                max-width: 45px;
+                width: 100%;
+                max-height: 60px;
+                height: 100%;
+            }
         }
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 50%;
+            li{
+                .menu-click {
+                    font-family: $m-reg;
+                }
+            }
+        }
+    }
+    .body-div {
+        @extend %width;
+        max-width: 60%;
+        height: 100%;
+        padding:100px 10px 40px 10px;
+        position: absolute;
+        z-index: 3;
+        background-color: grey;
     }
 }
