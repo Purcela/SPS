@@ -138,20 +138,30 @@ body .team .position {
   justify-content: space-evenly;
 }
 body .team .position img {
-  width: 80px;
-  height: 95px;
+  width: 65px;
+  height: 65px;
+  border-radius: 50px;
 }
-body .team .position .img1,
+body .team .position .img1 {
+  margin-right: 15%;
+}
 body .team .position .img9 {
-  margin-right: 10%;
+  margin-right: 15%;
 }
-body .team .position .img20 {
-  width: 100px;
-}
-body .team .position .img33 {
-  width: 90px;
-}
-body .team .gk,
 body .team .atack {
   justify-content: center;
+}
+body .team .gk .gk1 {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .team .gk .others {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
