@@ -125,7 +125,7 @@ body .body-div {
 }
 
 body .team {
-  background-image: url(../../img/stadium1.jpg);
+  background-image: url(../img/stadium1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
