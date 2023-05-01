@@ -1,6 +1,6 @@
 body {
     .team {
-        background-image: url(../img/stadium1.jpg);
+        background-image: url(../../img/stadium1.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -15,29 +15,95 @@ body {
                 height: 65px;
                 border-radius: 50px;
             }
-            .img1 {                
-                margin-right: 15%;                
+            .info {
+                max-width: 320px;
+                width: 100%;
+                height: 200px;
+                display: flex;
+                position: fixed;
+                bottom: 40%;
+                left: 40%;
+                display: none;
+                .infoimg {
+                    width: 155px;
+                    height: 200px;
+                    border-radius: 0%;
+                }
+                .playerinfo {                    
+                    width: 165px;
+                    height: 200px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: space-around;
+                    padding: 30px 5px 50px 10px;
+                    background-color: #ced0d5;
+                    p {
+                        font-family: $m-reg;
+                    }
+                }
             }
+            .info6 {                
+                position: fixed;
+                bottom: 40%;
+                left: 50%;
+            }
+            .info77 {                
+                position: fixed;
+                bottom: 40%;
+                left: 30%;
+            }
+            .info10,
+            .info11,
+            .info20 {                
+                position: fixed;
+                bottom: 35%;
+                left: 40%;
+            }
+            .img1,
             .img9 {                
                 margin-right: 15%;
-            }                 
+                &:hover + .info {
+                    display: flex;
+                }               
+            }  
+            .img2,
+            .img3,
+            .img5,
+            .img6,
+            .img7,
+            .img8,
+            .img10,
+            .img11,
+            .img12,
+            .img14,
+            .img17,
+            .img20,
+            .img33,
+            .img77,
+            .img99,
+            .imgcoach { 
+                &:hover + .info {
+                    display: flex;
+                }               
+            }            
         }
         .atack {            
             justify-content: center;
         } 
         .gk{
             .gk1 {
-                width: 80%;
+                width: 70%;
                 height: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
             }
             .others {
-                width: 10%;
+                width: 15%;
                 height: 100%;
                 display: flex;
-                justify-content: flex-end;
+                justify-content: center;
                 align-items: flex-end;
             }
         }

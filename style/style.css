@@ -68,6 +68,14 @@ a {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "KA_LORTKIPANIDZE";
+  src: url("../fonts/KA_LORTKIPANIDZE/KA_LORTKIPANIDZE.eot");
+  src: url("../fonts/KA_LORTKIPANIDZE/KA_LORTKIPANIDZE.eot?#iefix") format("embedded-opentype"), url("../fonts/KA_LORTKIPANIDZE/KA_LORTKIPANIDZE.woff2") format("woff2"), url("../fonts/KA_LORTKIPANIDZE/KA_LORTKIPANIDZE.woff") format("woff"), url("../fonts/KA_LORTKIPANIDZE/KA_LORTKIPANIDZE.ttf") format("truetype"), url("../fonts/KA_LORTKIPANIDZE/KA_LORTKIPANIDZE.svg#KA_LORTKIPANIDZE") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   width: 100%;
   height: 100vh;
@@ -125,7 +133,7 @@ body .body-div {
 }
 
 body .team {
-  background-image: url(../img/stadium1.jpg);
+  background-image: url(../../img/stadium1.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -142,26 +150,91 @@ body .team .position img {
   height: 65px;
   border-radius: 50px;
 }
-body .team .position .img1 {
-  margin-right: 15%;
+body .team .position .info {
+  max-width: 320px;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  position: fixed;
+  bottom: 40%;
+  left: 40%;
+  display: none;
 }
+body .team .position .info .infoimg {
+  width: 155px;
+  height: 200px;
+  border-radius: 0%;
+}
+body .team .position .info .playerinfo {
+  width: 165px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 30px 5px 50px 10px;
+  background-color: #ced0d5;
+}
+body .team .position .info .playerinfo p {
+  font-family: "Muli regular";
+}
+body .team .position .info6 {
+  position: fixed;
+  bottom: 40%;
+  left: 50%;
+}
+body .team .position .info77 {
+  position: fixed;
+  bottom: 40%;
+  left: 30%;
+}
+body .team .position .info10,
+body .team .position .info11,
+body .team .position .info20 {
+  position: fixed;
+  bottom: 35%;
+  left: 40%;
+}
+body .team .position .img1,
 body .team .position .img9 {
   margin-right: 15%;
+}
+body .team .position .img1:hover + .info,
+body .team .position .img9:hover + .info {
+  display: flex;
+}
+body .team .position .img2:hover + .info,
+body .team .position .img3:hover + .info,
+body .team .position .img5:hover + .info,
+body .team .position .img6:hover + .info,
+body .team .position .img7:hover + .info,
+body .team .position .img8:hover + .info,
+body .team .position .img10:hover + .info,
+body .team .position .img11:hover + .info,
+body .team .position .img12:hover + .info,
+body .team .position .img14:hover + .info,
+body .team .position .img17:hover + .info,
+body .team .position .img20:hover + .info,
+body .team .position .img33:hover + .info,
+body .team .position .img77:hover + .info,
+body .team .position .img99:hover + .info,
+body .team .position .imgcoach:hover + .info {
+  display: flex;
 }
 body .team .atack {
   justify-content: center;
 }
 body .team .gk .gk1 {
-  width: 80%;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 body .team .gk .others {
-  width: 10%;
+  width: 15%;
   height: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
 }

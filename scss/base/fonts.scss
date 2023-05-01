@@ -23,3 +23,16 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'KA_LORTKIPANIDZE';
+    src: url('../fonts/KA_LORTKIPANIDZE/KA_LORTKIPANIDZE.eot');
+    src: url('../fonts/KA_LORTKIPANIDZE/KA_LORTKIPANIDZE.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/KA_LORTKIPANIDZE/KA_LORTKIPANIDZE.woff2') format('woff2'),
+        url('../fonts/KA_LORTKIPANIDZE/KA_LORTKIPANIDZE.woff') format('woff'),
+        url('../fonts/KA_LORTKIPANIDZE/KA_LORTKIPANIDZE.ttf') format('truetype'),
+        url('../fonts/KA_LORTKIPANIDZE/KA_LORTKIPANIDZE.svg#KA_LORTKIPANIDZE') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

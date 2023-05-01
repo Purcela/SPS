@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'KA_LORTKIPANIDZE';
+    src: url('KA_LORTKIPANIDZE.eot');
+    src: url('KA_LORTKIPANIDZE.eot?#iefix') format('embedded-opentype'),
+        url('KA_LORTKIPANIDZE.woff2') format('woff2'),
+        url('KA_LORTKIPANIDZE.woff') format('woff'),
+        url('KA_LORTKIPANIDZE.ttf') format('truetype'),
+        url('KA_LORTKIPANIDZE.svg#KA_LORTKIPANIDZE') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
