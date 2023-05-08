@@ -151,64 +151,56 @@ body .team .position img {
   border-radius: 50px;
 }
 body .team .position .info {
-  max-width: 320px;
+  max-width: 230px;
   width: 100%;
-  height: 200px;
+  height: 380px;
+  background-color: white;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   position: fixed;
-  bottom: 40%;
-  left: 40%;
+  top: 12%;
+  left: 1%;
   display: none;
 }
 body .team .position .info .infoimg {
-  width: 155px;
-  height: 200px;
+  max-width: 215px;
+  width: 100%;
+  height: 230px;
   border-radius: 0%;
 }
 body .team .position .info .playerinfo {
-  width: 165px;
-  height: 200px;
+  width: 100%;
+  height: 150px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
-  padding: 30px 5px 50px 10px;
+  justify-content: space-between;
+  padding: 10px 5px 10px 5px;
   background-color: #ced0d5;
 }
 body .team .position .info .playerinfo p {
   font-family: "Muli regular";
 }
-body .team .position .info6 {
-  position: fixed;
-  bottom: 40%;
-  left: 50%;
+body .team .position .info .playerinfo .birthday {
+  font-size: 14px;
 }
-body .team .position .info77 {
-  position: fixed;
-  bottom: 40%;
-  left: 30%;
-}
-body .team .position .info10,
-body .team .position .info11,
+body .team .position .info6,
 body .team .position .info20 {
-  position: fixed;
-  bottom: 35%;
-  left: 40%;
+  max-width: 230px;
 }
 body .team .position .img1,
 body .team .position .img9 {
   margin-right: 15%;
 }
 body .team .position .img1:hover + .info,
-body .team .position .img9:hover + .info {
-  display: flex;
-}
 body .team .position .img2:hover + .info,
 body .team .position .img3:hover + .info,
 body .team .position .img5:hover + .info,
 body .team .position .img6:hover + .info,
 body .team .position .img7:hover + .info,
 body .team .position .img8:hover + .info,
+body .team .position .img9:hover + .info,
 body .team .position .img10:hover + .info,
 body .team .position .img11:hover + .info,
 body .team .position .img12:hover + .info,
@@ -218,7 +210,8 @@ body .team .position .img20:hover + .info,
 body .team .position .img33:hover + .info,
 body .team .position .img77:hover + .info,
 body .team .position .img99:hover + .info,
-body .team .position .imgcoach:hover + .info {
+body .team .position .imgcoach:hover + .info,
+body .team .position .imgassistant:hover + .info {
   display: flex;
 }
 body .team .atack {
@@ -235,6 +228,7 @@ body .team .gk .others {
   width: 15%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: flex-end;
 }

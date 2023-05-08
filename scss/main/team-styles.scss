@@ -16,63 +16,56 @@ body {
                 border-radius: 50px;
             }
             .info {
-                max-width: 320px;
+                max-width: 230px;
                 width: 100%;
-                height: 200px;
+                height: 380px;
+                background-color: white;
                 display: flex;
+                flex-direction: column;
+                align-items: center;
                 position: fixed;
-                bottom: 40%;
-                left: 40%;
+                top: 12%;
+                left: 1%;
                 display: none;
                 .infoimg {
-                    width: 155px;
-                    height: 200px;
+                    max-width: 215px;
+                    width: 100%;
+                    height: 230px;
                     border-radius: 0%;
                 }
-                .playerinfo {                    
-                    width: 165px;
-                    height: 200px;
+                .playerinfo {  
+                    width: 100%;
+                    height: 150px;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
-                    justify-content: space-around;
-                    padding: 30px 5px 50px 10px;
+                    justify-content: space-between;
+                    padding: 10px 5px 10px 5px;
                     background-color: #ced0d5;
                     p {
                         font-family: $m-reg;
                     }
+                    .birthday {
+                        font-size: 14px;
+                    }
                 }
             }
-            .info6 {                
-                position: fixed;
-                bottom: 40%;
-                left: 50%;
-            }
-            .info77 {                
-                position: fixed;
-                bottom: 40%;
-                left: 30%;
-            }
-            .info10,
-            .info11,
-            .info20 {                
-                position: fixed;
-                bottom: 35%;
-                left: 40%;
+            .info6,
+            .info20 {
+                max-width: 230px;
+            }            
+            .img1,
+            .img9 {
+                margin-right: 15%;
             }
             .img1,
-            .img9 {                
-                margin-right: 15%;
-                &:hover + .info {
-                    display: flex;
-                }               
-            }  
             .img2,
             .img3,
             .img5,
             .img6,
             .img7,
             .img8,
+            .img9, 
             .img10,
             .img11,
             .img12,
@@ -82,7 +75,8 @@ body {
             .img33,
             .img77,
             .img99,
-            .imgcoach { 
+            .imgcoach,
+            .imgassistant { 
                 &:hover + .info {
                     display: flex;
                 }               
@@ -103,7 +97,8 @@ body {
                 width: 15%;
                 height: 100%;
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
+                justify-content: space-evenly;
                 align-items: flex-end;
             }
         }
