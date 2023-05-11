@@ -176,7 +176,7 @@ body .team .position .info .playerinfo {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  padding: 10px 5px 10px 5px;
+  padding: 15px 5px;
   background-color: #ced0d5;
 }
 body .team .position .info .playerinfo p {
