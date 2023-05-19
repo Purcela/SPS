@@ -1,20 +1,148 @@
 body {
-    .team {
+    .body-div {    
+        display: flex;
         background-image: url(../../img/stadium1.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        .position {
-            width: 100%;
-            height: 20%;
-            display: flex;
-            align-items: center;
-            justify-content: space-evenly;
-            img {
-                width: 65px;
-                height: 65px;
-                border-radius: 50px;
+        .team {
+            width: 80%;
+            height: 100%;
+            .position {
+                width: 100%;
+                height: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                .hovernum {
+                    width: 55px;
+                    height: 55px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50px;
+                    background-color: blue;                    
+                    .number {                        
+                        color: white;
+                        font-size: 35px;
+                    }
+                }
+                .info {
+                    max-width: 230px;
+                    width: 100%;
+                    height: 380px;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: fixed;
+                    top: 12%;
+                    left: 3%;
+                    display: none;
+                    .infoimg {
+                        max-width: 215px;
+                        width: 100%;
+                        height: 230px;
+                        border-radius: 0%;
+                    }
+                    .infoimg14 {
+                        width: 80%;
+                    } 
+                    .playerinfo {  
+                        width: 100%;
+                        height: 150px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: space-between;
+                        padding: 15px 5px;
+                        background-color: white;
+                        p {
+                            font-family: $m-reg;
+                        }
+                        .birthday {
+                            font-size: 14px;
+                        }
+                    }
+                }
+                .info6,
+                .info20 {
+                    max-width: 230px;
+                }            
+                .hovernum {  
+                    &:hover + .info {
+                        display: flex;
+                    }               
+                }        
             }
+            .mid1 {
+                align-items: flex-end;
+                justify-content: space-around;
+            }
+            .atack {            
+                justify-content: center;
+            } 
+            .gk {
+                .hovernumgk {
+                    background-color: #e3e307;
+                    .numbergk {
+                        color: black;
+                        font-size: 45px;
+                    }
+                }
+                .gk1 {
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+            
+        }         
+        .left-div,
+        .right-div {
+            width: 10%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            .hovernum {
+                width: 55px;
+                height: 55px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50px;
+                background-color: blue;
+                .number {                        
+                    color: white;
+                    font-size: 35px;
+                }                   
+                .numbercoach {  
+                    font-size: 20px;
+                }
+                .numberassistant { 
+                    font-size: 15px;
+                }
+            }            
+            .hovernumgk {
+                background-color: #e3e307;
+                .numbergk {
+                    color: black;
+                    font-size: 35px;
+                }
+            }
+            .hovernum { 
+                &:hover + .info {
+                    display: flex;
+                }               
+            } 
+            .hovermarmng {
+                background-color: red;
+                margin-bottom: 30px;
+            } 
             .info {
                 max-width: 230px;
                 width: 100%;
@@ -25,9 +153,9 @@ body {
                 align-items: center;
                 position: fixed;
                 top: 12%;
-                left: 1%;
+                left: 3%;
                 display: none;
-                .infoimg {
+                img {
                     max-width: 215px;
                     width: 100%;
                     height: 230px;
@@ -41,67 +169,18 @@ body {
                     align-items: flex-start;
                     justify-content: space-between;
                     padding: 15px 5px;
-                    background-color: #ced0d5;
+                    background-color: white;
                     p {
                         font-family: $m-reg;
                     }
                     .birthday {
                         font-size: 14px;
                     }
-                }
-            }
-            .info6,
-            .info20 {
-                max-width: 230px;
-            }            
-            .img1,
-            .img9 {
-                margin-right: 15%;
-            }
-            .img1,
-            .img2,
-            .img3,
-            .img5,
-            .img6,
-            .img7,
-            .img8,
-            .img9, 
-            .img10,
-            .img11,
-            .img12,
-            .img14,
-            .img17,
-            .img20,
-            .img33,
-            .img77,
-            .img99,
-            .imgcoach,
-            .imgassistant { 
-                &:hover + .info {
-                    display: flex;
-                }               
-            }            
-        }
-        .atack {            
-            justify-content: center;
+                }   
+            }           
         } 
-        .gk{
-            .gk1 {
-                width: 70%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .others {
-                width: 15%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-evenly;
-                align-items: flex-end;
-            }
-        }
-          
-    }
+        .right-div {
+            justify-content: space-evenly;
+        }      
+    }    
 }
