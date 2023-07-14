@@ -5,12 +5,13 @@ function buildStyles() {
   return gulp.src('scss/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(gulp.dest('style'));
-};
+}
 
+function watch() {
+  gulp.watch('scss/style.scss', gulp.series('buildStyles'));
+}
 
- function watch() {
-  gulp.watch('scss/style.scss', gulp.dest ('sass'));
-};
+gulp.task('buildStyles', buildStyles);
+gulp.task('watch', watch);
 
-exports.buildStyles = buildStyles;
-exports.watch = watch;
+gulp.task('default', gulp.series('buildStyles', 'watch'));
